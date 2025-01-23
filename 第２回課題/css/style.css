@@ -10,22 +10,39 @@
 .menu1 {
   list-style: none;
   color: #444;
-  border-right: 1px solid#444;
-  margin: auto;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   align-items: center;
+}
+
+.menu1 li {
+  border-right: 1px solid#444;
+  padding: 3px 20px;
+}
+
+.menu1 lii {
+  border: none;
+  padding: 3px 20px;
 }
 
 @media screen and (max-width: 767px) {
   .header {
     flex-direction: column;
+    display: flex;
+    width: 90%;
   }
   .menu1 {
+    display: flex;
     flex-direction: column;
-    border-bottom: 2px solid #444;
+    align-items: flex-start;
+    padding: 0px;
+  }
+  .menu1 li {
+    border-bottom: 1px solid#444;
     border-right: none;
+  }
+  .menu1 lii {
+    border-bottom: 1px solid#444;
   }
 }
 
