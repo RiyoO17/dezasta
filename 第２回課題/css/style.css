@@ -27,11 +27,9 @@
 @media screen and (max-width: 767px) {
   .header {
     flex-direction: column;
-    display: flex;
     width: 90%;
   }
   .menu1 {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
