@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.header {
+.background {
   max-width: 960px;
   background-color: #eeeeee;
   margin: 0 auto;
@@ -10,16 +10,34 @@
 
 .header h1 {
   color: darkgreen;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.menu {
   display: flex;
   justify-content: space-between;
 }
 
-.menu li {
+.photobox1 h2 {
   color: darkgreen;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-left: 10px solid darkgreen;
+  padding: 10px 0px 0px 5px;
+  width: 30%;
+}
+
+.photobox2 h2 {
+  color: darkgreen;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-left: 10px solid darkgreen;
+  padding: 10px 0px 0px 5px;
+}
+
+.photobox3 h2 {
+  color: darkgreen;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-left: 10px solid darkgreen;
+  padding: 10px 0px 0px 5px;
 }
