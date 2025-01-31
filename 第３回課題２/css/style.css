@@ -4,40 +4,52 @@
   max-width: 960px;
   background-color: #eeeeee;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
-.header h1 {
+.h1 {
   color: darkgreen;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
-.photobox1 h2 {
-  color: darkgreen;
-  background-color: white;
+.servise-wrap {
   display: flex;
   justify-content: space-between;
+  margin: 70px auto;
+}
+.photobox h2 {
+  color: darkgreen;
   border-left: 10px solid darkgreen;
-  padding: 10px 0px 0px 5px;
-  width: 30%;
+  padding: 10px 0px 10px 5px;
+  margin: 8px;
 }
 
-.photobox2 h2 {
-  color: darkgreen;
+.photobox {
   background-color: white;
-  display: flex;
-  justify-content: space-between;
-  border-left: 10px solid darkgreen;
-  padding: 10px 0px 0px 5px;
+  width: 31%;
+  font-weight: bold;
+}
+.word {
+  padding: 5px 10px 10px 10px;
 }
 
-.photobox3 h2 {
+@media screen and (max-width: 400px) {
+  .background {
+    flex-direction: column;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.h1 {
   color: darkgreen;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  border-left: 10px solid darkgreen;
-  padding: 10px 0px 0px 5px;
+  text-align: center;
+}
+
+.servise-wrap {
+  flex-direction: column;
+  margin: 50px auto;
 }
