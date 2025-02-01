@@ -8,7 +8,7 @@
   justify-content: space-between; */
 }
 
-.h1 {
+h1 {
   color: darkgreen;
   text-align: center;
   /* display: flex;
@@ -41,15 +41,30 @@
     flex-direction: column;
     background-color: #eeeeee;
     margin: 0 auto;
+  }
+  .servise-wrap {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  img {
+    margin: auto;
     width: 100%;
   }
-}
-.h1 {
-  color: darkgreen;
-  text-align: center;
-}
-
-.servise-wrap {
-  flex-direction: column;
-  margin: 50px auto;
+  /* p {
+    width: 100%;
+  } */
+  .photobox h2 {
+    margin: 4px;
+    padding: 4px;
+  }
+  .photobox {
+    width: 95%;
+    /* height: 97%; */
+    /* padding: 20px 10px 20px 0px; */
+    margin: 0 auto;
+  }
+  .word {
+    padding: 10px 6px 10px 6px;
+    margin: 4px;
+  }
 }
