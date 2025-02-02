@@ -4,21 +4,19 @@
   max-width: 960px;
   background-color: #eeeeee;
   margin: 0 auto;
-  /* display: flex;
-  justify-content: space-between; */
 }
 
 h1 {
   color: darkgreen;
   text-align: center;
-  /* display: flex;
-  justify-content: space-between; */
+  margin-top: 50px;
 }
 
 .servise-wrap {
   display: flex;
   justify-content: space-between;
-  margin: 70px auto;
+  margin: 70px 0;
+  padding: 0px 10px;
 }
 .photobox h2 {
   color: darkgreen;
@@ -37,30 +35,20 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
-  .background {
-    flex-direction: column;
-    background-color: #eeeeee;
-    margin: 0 auto;
-  }
   .servise-wrap {
     flex-direction: column;
-    margin: 50px auto;
+    margin: 50px 0;
+    gap: 30px;
   }
   img {
-    margin: auto;
     width: 100%;
   }
-  /* p {
-    width: 100%;
-  } */
   .photobox h2 {
     margin: 4px;
     padding: 4px;
   }
   .photobox {
     width: 95%;
-    /* height: 97%; */
-    /* padding: 20px 10px 20px 0px; */
     margin: 0 auto;
   }
   .word {
