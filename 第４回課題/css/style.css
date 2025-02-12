@@ -36,24 +36,28 @@ header {
   max-width: 1000px;
   margin: 0 auto;
 }
-p {
+.word {
+  text-align: center;
+}
+
+.word p:nth-child(1) {
   margin-top: 100px;
   font-size: 30px;
 }
-p {
+.word p:nth-child(2) {
   margin-top: 45px;
   font-size: 82px;
   line-height: 1.2;
 }
-p {
+.word p:nth-child(3) {
   margin-top: 17px;
   font-size: 23px;
   line-height: 1.65;
 }
 
-.about {
-  /* display: flex;
-  justify-content: space-between; */
+.about_us {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .photo {
@@ -61,12 +65,16 @@ p {
   justify-content: space-between;
   margin-top: 90px;
   width: 50%;
-  height: 560px;
   border-bottom-right-radius: 82px;
 }
-
-h2 {
-  font-size: 80px;
+.about_text {
+  text-align: left;
+  padding: 0px 460px 0px 80px;
+  width: 41%;
+}
+.logo {
+  width: 50%;
+  margin-top: 150px;
 }
 .text {
   margin-top: 47px;
@@ -74,7 +82,7 @@ h2 {
   line-height: 1.4;
 }
 .text1 {
-  margin-top: 20px;
+  margin-top: 23px;
   font-size: 16px;
   line-height: 1.6;
 }
