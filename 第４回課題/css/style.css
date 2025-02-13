@@ -51,30 +51,33 @@ header {
 }
 .word p:nth-child(3) {
   margin-top: 17px;
+  margin-bottom: 90px;
   font-size: 23px;
   line-height: 1.65;
 }
 
 .about_us {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 42px;
 }
 .photo {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
   width: 50%;
   border-bottom-right-radius: 82px;
+  overflow: hidden;
 }
 .about_text {
   text-align: left;
-  padding: 0px 460px 0px 80px;
   width: 41%;
 }
 .logo {
   width: 50%;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 .text {
   margin-top: 47px;
@@ -85,4 +88,50 @@ header {
   margin-top: 23px;
   font-size: 16px;
   line-height: 1.6;
+}
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.logo2 {
+  text-align: center;
+  width: 50%;
+}
+.menu_text {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 40px 0;
+}
+li {
+  width: 30%;
+  border-top-right-radius: 42px;
+  overflow: hidden;
+}
+.red {
+  font-size: 38px;
+  color: #d30202;
+  padding-left: 12px;
+}
+.text2 {
+  font-size: 17px;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+.gallery {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.logo3 {
+  width: 50%;
+  text-align: center;
+}
+
+.photogallery {
+  display: flex;
+  justify-content: space-between;
+  border-top-right-radius: none;
+  margin-top: 80px;
 }
