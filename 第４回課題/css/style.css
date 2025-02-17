@@ -32,8 +32,11 @@ header {
   font-size: 18px;
 }
 
-main {
-  padding: 10px;
+.page_top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 125px;
 }
 
 .word {
@@ -63,6 +66,7 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 42px;
+  padding: 10px;
 }
 .photo {
   display: flex;
@@ -93,6 +97,8 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 38px;
+  padding: 10px;
+  margin-top: 95px;
 }
 
 .menu_title {
@@ -114,6 +120,7 @@ main {
   font-size: 38px;
   color: #d30202;
   padding-left: 12px;
+  line-height: 0.4;
 }
 .text2 {
   font-size: 17px;
@@ -136,6 +143,9 @@ main {
   border-top-right-radius: none;
 }
 
+.event {
+  padding: 10px;
+}
 .event_title {
   margin: 0 auto;
   width: 174px;
@@ -146,14 +156,22 @@ main {
   border: 3.5px solid#4f260b;
   background-color: #ffffff;
   max-width: 1000px;
-  height: 200px;
-  /* padding: 42px 165px 38px 163px; */
+  padding: 36px;
   margin-top: 35px;
   margin-bottom: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event_border div {
+  display: inline-block;
 }
 .event_date {
   display: flex;
   font-size: 23px;
+  gap: 45px;
+}
+.event_date li {
   line-height: 1.9;
 }
 
@@ -171,23 +189,32 @@ main {
   width: 100%;
   height: 470px;
 }
-.access_memo {
+
+footer {
+  width: 100%;
+  margin: 0 auto;
   background-color: #ffffff;
+}
+.access_memo {
   display: flex;
   justify-content: center;
   gap: 63px;
   align-items: flex-start;
-  padding-top: 75px;
-  padding-bottom: 73px;
+  padding-top: 82px;
 }
 .cafe_logo {
   width: 228px;
 }
-.access_text ul {
+.access_text li {
   font-size: 20px;
   color: #000000;
   line-height: 2;
 }
-.fin li {
-  padding-top: 71px;
+.fin {
+  padding: 73px 0px 75px 0px;
+  font-size: 16px;
+  color: #000000;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
 }
