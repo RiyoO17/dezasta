@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header_top">
         <div class="header_slider">
             <div>
                 <img src="./images/pc_first-100.jpg" alt="店内の様子">
@@ -21,17 +21,16 @@
         </div>
 
         <div class="header_wrap">
-            <a href="#header_wrap">header_wrap</a>
             <h1 class="header_logo">
                 <img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE">
             </h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#ABOUT US">ABOUT US</a></li>
-                    <li><a href="#menu_title">MENU</a></li>
-                    <li><a href="#gallery_title">GALLERY</a></li>
-                    <li><a href="#event_title">EVENT</a></li>
-                    <li><a href="#access_title">ACCESS</a></li>
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,10 +38,11 @@
 
     <main>
 
-        <h2 class="page_top"><img src="images/to_top@2x.png" alt="PAGE_TOP"></h2>
-        <h2 id="header_wrap"></h2>
-
-
+        <div class="page_top">
+            <a href="#header_top">
+                <img src="images/to_top@2x.png" alt="PAGE_TOP">
+            </a>
+        </div>
         <div class="word">
 
             <p> Have a happy day From a cup of coffee.</p>
@@ -51,13 +51,12 @@
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
         </div>
 
-        <section class="about_us">
+        <section class="about_us" id="about_us">
             <div class="photo"><img src="images/pc_about-100.jpg" alt="coffee">
             </div>
             <div class="about_text">
                 <h2 class="about_us_title"><img src="images/about_us@2x.png" alt="ABOUT US">
                 </h2>
-                <h2 id="ABOUT US"></h2>
                 <p class="text">私たちが提供する<br>
                     こだわりのコーヒー</p>
                 <p class="text1">
@@ -73,11 +72,10 @@
             </div>
         </section>
 
-        <section class="menu">
+        <section class="menu" id="menu">
 
             <h2 class="menu_title"><img src="images/menu@2x.png" alt="MENU">
             </h2>
-            <h2 id="menu_title"></h2>
             <ul class="menu_text">
 
                 <li class="drink"><img src="images/pc_menu_drink-100.jpg" alt="DRINK">
@@ -96,11 +94,10 @@
             </ul>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
 
             <h2 class="gallery_title"><img src="images/gallery@2x.png" alt="GALLERY">
             </h2>
-            <h2 id="gallery_title"></h2>
             <ul class="photogallery">
                 <li class="galleryphoto"><img src="images/pc_gallary_05-100.jpg" alt="01">
                 </li>
@@ -116,11 +113,10 @@
             </ul>
         </section>
 
-        <section class="event">
+        <section class="event" id="event">
 
             <h2 class="event_title"><img src="images/event@2x.png" alt="EVENT">
             </h2>
-            <h2 id="event_title"></h2>
             <div class="event_border">
                 <div>
                     <ul class="event_date">
@@ -140,11 +136,10 @@
 
         </section>
 
-        <section class="access">
+        <section class="access" id="access">
 
             <h2 class="access_title"><img src="images/access@2x.png" alt="ACCESS">
             </h2>
-            <h2 id="access_title"></h2>
             <div class="access_map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6579.774633432294!2d136.72289887570813!3d34.455008196356175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600450ebdf9f37f3%3A0xf009663753f60ca7!2z55qH5aSn56We5a6u77yI5LyK5Yui56We5a6uIOWGheWuru-8iQ!5e0!3m2!1sja!2sjp!4v1739786045866!5m2!1sja!2sjp"

@@ -51,12 +51,14 @@ header {
   margin-top: 45px;
   font-size: 82px;
   line-height: 1.2;
+  letter-spacing: 0.1em;
 }
 .word p:nth-child(3) {
-  margin-top: 17px;
+  margin-top: 22px;
   margin-bottom: 90px;
   font-size: 23px;
   line-height: 1.65;
+  letter-spacing: 0.1em;
 }
 
 .about_us {
@@ -124,7 +126,7 @@ header {
 }
 .text2 {
   font-size: 17px;
-  padding-top: 10px;
+  padding-top: 25px;
   line-height: 1.5;
 }
 .gallery {
@@ -162,6 +164,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 .event_border div {
   display: inline-block;
@@ -197,10 +200,11 @@ footer {
 }
 .access_memo {
   display: flex;
-  justify-content: center;
   gap: 63px;
   align-items: flex-start;
   padding-top: 82px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .cafe_logo {
   width: 228px;
@@ -215,6 +219,5 @@ footer {
   font-size: 16px;
   color: #000000;
   margin: 0 auto;
-  display: inline-block;
   text-align: center;
 }
