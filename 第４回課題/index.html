@@ -7,22 +7,40 @@
     <title>DesignCafe</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header id="header_top">
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
             </div>
         </div>
 
         <div class="header_wrap">
             <h1 class="header_logo">
+
+
                 <img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE">
+
             </h1>
             <nav class="pc_nav">
+                <ul>
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn ">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
                 <ul>
                     <li><a href="#about_us">ABOUT US</a></li>
                     <li><a href="#menu">MENU</a></li>
@@ -47,10 +65,23 @@
             <p>ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
             <p>毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+            <p class="sp_word">
+            <p>毎日を丁寧に大切に過ごしたい。<br>
+                だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間と<br>
+                こだわりのコーヒーを提供したい。
+            </p>
+            </p>
         </div>
 
         <section class="about_us" id="about_us">
-            <div class="photo"><img src="images/pc_about-100.jpg" alt="coffee">
+            <div class="photo">
+                <div>
+                    <picture>
+                        <source srcset="./images/about_us@2x-100.jpg" media="(max-width:767px)">
+                        <img src="images/pc_about-100.jpg" alt="coffee">
+                    </picture>
+                </div>
             </div>
             <div class="about_text">
                 <h2 class="about_us_title"><img src="images/about_us@2x.png" alt="ABOUT US">
@@ -163,6 +194,17 @@
 
 
     </main>
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            })
+
+
+
+        })
+    </script>
 </body>
 
 </html>
