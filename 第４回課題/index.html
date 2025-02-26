@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesignCafe</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -17,6 +21,14 @@
                 <picture>
                     <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
                     <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </div>
+
+
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/slider_2.jpg" alt="店内の様子">
                 </picture>
             </div>
         </div>
@@ -119,8 +131,7 @@
             <h2 class="gallery_title"><img src="images/gallery@2x.png" alt="GALLERY">
             </h2>
 
-            <img src="images/mobile_gallery-100.jpg" alt="sp_gallery" class="sp_galler
-            y">
+            <img src="images/mobile_gallery-100.jpg" alt="sp_gallery" class="sp_gallery">
 
             <ul class="photogallery">
                 <li class="galleryphoto"><img src="images/pc_gallary_05-100.jpg" alt="01">
@@ -157,6 +168,20 @@
                         <li class="event_memo">コーヒーの日で30％OFFイベントを開催［3日間限定］</li>
                     </ul>
                 </div>
+            </div>
+            <div class="event_border_sp">
+                <ul class="event_date_sp">
+                    <li>2020.06.23<br>
+                    <li class="event_memo_sp">7月はイベント出店のため0/0お休みします</li>
+                </ul>
+                <ul class="event_date_sp">
+                    <li>2020.03.15<br>
+                    <li class="event_memo_sp">春の新商品新発売。話題のあのブランドとコラボ</li>
+                </ul>
+                <ul class="event_date_sp">
+                    <li>2020.02.06<br>
+                    <li class="event_memo_sp">コーヒーの日で30％OFFイベントを開催［3日間限定］</li>
+                </ul>
             </div>
 
         </section>
@@ -196,7 +221,12 @@
                 $('.sp_btn').toggleClass('open');
                 $('.sp_nav').fadeToggle();
             })
-
+            $('.header_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+            });
 
 
         })
