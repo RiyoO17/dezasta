@@ -135,6 +135,7 @@ header {
   border-top-right-radius: 42px;
   overflow: hidden;
 }
+
 .red {
   font-size: 38px;
   color: #d30202;
@@ -221,6 +222,7 @@ footer {
   margin: 0 auto;
   background-color: #ffffff;
   padding: 10px;
+  box-sizing: border-box;
 }
 .access_memo {
   display: flex;
@@ -320,6 +322,12 @@ footer {
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
       "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   }
+  .word p:nth-child(2) {
+    font-size: 50px;
+  }
+  .text {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
   .page_top {
@@ -348,6 +356,7 @@ footer {
   }
   .about_us {
     flex-direction: column;
+    padding: 0;
   }
   .photo {
     display: none;
@@ -370,6 +379,7 @@ footer {
     padding-left: 20px;
     font-size: 32px;
     line-height: 1.25;
+    box-sizing: border-box;
   }
   .text1 {
     margin-top: 20px;
@@ -389,10 +399,7 @@ footer {
   .menu_title {
     width: 88px;
   }
-  .menu_text li {
-    width: 100%;
-    margin-top: 18px;
-  }
+
   .menu_text img {
     width: 100%;
     /* margin: 0 auto; */
@@ -426,11 +433,11 @@ footer {
   }
   .event_border_sp {
     flex-direction: column;
-    background-color: #e8d9bf;
+    background-color: #ffffff;
     margin: 0 auto;
     border: 3px solid#4f260b;
     max-width: 100%;
-    padding: 18px 0px 18px 26px;
+    padding: 18px 26px;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -444,7 +451,9 @@ footer {
     padding-bottom: 30px;
     line-height: 3.8;
   }
-
+  .event_date_sp:last-child {
+    padding-bottom: 0;
+  }
   .event_date {
     display: none;
   }
@@ -463,6 +472,9 @@ footer {
   }
   .access_map iframe {
     padding-top: 0px;
+    display: block;
+    width: 100%;
+    height: 191px;
   }
   .access_memo {
     flex-direction: column;
@@ -482,6 +494,6 @@ footer {
   }
   .fin {
     /* margin-top: 35px; */
-    padding: 35px 0px;
+    padding: 35px 0 0 0;
   }
 }
