@@ -104,43 +104,41 @@
         </section>
 
         <section class="menu" id="menu">
-            <!-- <div>
-                <picture>
-                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
-                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
-                </picture>
-            </div> -->
+
 
             <h2 class="menu_title"><img src="images/menu@2x.png" alt="MENU">
             </h2>
 
             <ul class="menu_text">
-                <div>
-                    <picture>
-                        <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width:767px)">
-                        <li class="drink"><img src="images/pc_menu_drink-100.jpg" alt="DRINK">
-                    </picture>
-                </div>
-                <h3 class="red">Drink</h3>
-                <p class="text2">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                <li class="drink">
+                    <div>
+                        <picture>
+                            <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="images/pc_menu_drink-100.jpg" alt="DRINK">
+                        </picture>
+                    </div>
+                    <h3 class="red">Drink</h3>
+                    <p class="text2">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </li>
-                <div>
-                    <picture>
-                        <source srcset="./images/food_sp@2x-100.jpg" media="(max-width:767px)">
-                        <li class="food"><img src="images/pc_menu_food-100.jpg" alt="FOOD">
-                    </picture>
-                </div>
-                <h3 class="red">Food</h3>
-                <p class="text2">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                <li class="food">
+                    <div>
+                        <picture>
+                            <source srcset="./images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="images/pc_menu_food-100.jpg" alt="FOOD">
+                        </picture>
+                    </div>
+                    <h3 class="red">Food</h3>
+                    <p class="text2">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </li>
-                <div>
-                    <picture>
-                        <source srcset="./images/food_sp@2x-100.jpg" media="(max-width:767px)">
-                        <li class="sweets"><img src="images/pc_menu_sweets-100.jpg" alt="SWEETS">
-                    </picture>
-                </div>
-                <h3 class="red">Sweets</h3>
-                <p class="text2">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                <li class="sweets">
+                    <div>
+                        <picture>
+                            <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="images/pc_menu_sweets-100.jpg" alt="SWEETS">
+                        </picture>
+                    </div>
+                    <h3 class="red">Sweets</h3>
+                    <p class="text2">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </li>
             </ul>
         </section>
@@ -151,19 +149,22 @@
             </h2>
 
             <img src="images/mobile_gallery-100.jpg" alt="sp_gallery" class="sp_gallery">
-
-            <ul class="photogallery">
-                <li class="galleryphoto"><img src="images/pc_gallary_05-100.jpg" alt="01">
-                </li>
-                <li class="galleryphoto"><img src="images/pc_gallary_04-100.jpg" alt="02">
-                </li>
-                <li class="galleryphoto"><img src="images/pc_gallary_03-100.jpg" alt="03">
-                </li>
-                <li class="galleryphoto"><img src="images/pc_gallary_02-100.jpg" alt="04">
-                </li>
-                <li class="galleryphoto"><img src="images/pc_gallary_01-100.jpg" alt="05">
-                </li>
-            </ul>
+            <div>
+                <ul class="photogallery">
+                    <li class="galleryphoto"><img src="images/pc_gallary_05-100.jpg" alt="01">
+                    </li>
+                    <li class="galleryphoto"><img src="images/pc_gallary_04-100.jpg" alt="02">
+                    </li>
+                    <li class="galleryphoto"><img src="images/pc_gallary_03-100.jpg" alt="03">
+                    </li>
+                    <li class="galleryphoto"><img src="images/pc_gallary_02-100.jpg" alt="04">
+                    </li>
+                    <li class="galleryphoto"><img src="images/pc_gallary_01-100.jpg" alt="05">
+                    </li>
+                    <li class="galleryphoto"><img src="images/pc_gallary_05-100.jpg" alt="01">
+                    </li>
+                </ul>
+            </div>
 
 
         </section>
@@ -240,15 +241,18 @@
                 $('.sp_btn').toggleClass('open');
                 $('.sp_nav').fadeToggle();
             })
+
             $('.header_slider').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
                 dots: true,
                 arrows: false,
-            });
-
+            })
+            $('.photogallery').slick()
 
         })
+
+
     </script>
 </body>
 

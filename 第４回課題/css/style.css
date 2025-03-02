@@ -25,6 +25,10 @@ header {
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
   color: #fff;
+  font-size: 12px;
+}
+.slick-dots.slick-slider {
+  margin-bottom: 0px;
 }
 .header_logo {
   width: 226px;
@@ -162,6 +166,15 @@ header {
   justify-content: space-between;
   border-top-right-radius: none;
 }
+/* .photogallery {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+} */
 .sp_gallery {
   display: none;
 }
@@ -398,11 +411,11 @@ footer {
   }
   .menu_title {
     width: 88px;
+    margin-bottom: 16px;
   }
 
-  .menu_text img {
+  .menu_text li {
     width: 100%;
-    /* margin: 0 auto; */
   }
   .red {
     font-size: 40px;
@@ -410,9 +423,10 @@ footer {
   }
   .text2 {
     font-size: 17px;
-    padding-top: 15px;
+
     line-height: 1.6;
-    padding-bottom: 13px;
+    padding-top: 16px;
+    padding-bottom: 30px;
   }
   .gallery_title {
     width: 142px;
