@@ -248,7 +248,18 @@
                 dots: true,
                 arrows: false,
             })
-            $('.photogallery').slick()
+            $('.photogallery').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        slidesToShow: 1,
+
+                    }
+                ]
+
+            })
 
         })
 
